@@ -1,0 +1,158 @@
+
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>apply</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-header class="background">
+  <ion-navbar>
+  <ion-row>
+    <ion-col col-8>
+      <div class="align-col">
+     <h2 class="fboldness">Get Your Loan</h2> 
+     <p>Kindly complete all fields with honest responses</p>
+    </div>
+    </ion-col>
+    <ion-col col-4>
+      <div class="align-img">
+      <ion-avatar>
+        <img src="/assets/imgs/user.png">
+        
+      </ion-avatar>
+    </div>
+    </ion-col>
+  </ion-row>
+</ion-navbar>
+
+</ion-header>
+
+<ion-content >
+
+  <ion-slides #slides pager="true" paginationType="progress"> 
+   
+    
+    <ion-slide>
+      
+    
+      <div class="align-col">
+        <h2 class="fboldness">How much do you need ?</h2> 
+       
+        <ion-list>
+          <ion-item>
+            <ion-input type="number" placeholder="Enter Amount "></ion-input>
+          </ion-item>
+          <button type="submit" float-right ion-button color="primary" (click)="next()">Next</button>
+        
+        </ion-list>
+       </div>
+  
+    </ion-slide>
+
+
+
+
+    <ion-slide>
+      
+      
+      <div class="align-col">
+        <h2 class="fboldness">How long can you pay back?</h2> 
+       
+        <ion-list>
+          <ion-item>
+            <ion-input type="number" placeholder="Mininum 1 month "></ion-input>
+          </ion-item>
+          <button type="submit" float-right ion-button color="primary" (click)="prev()">Previous</button>
+          <button type="submit" float-right ion-button color="primary" (click)="next()">Next</button>
+        
+        </ion-list>
+       </div>
+
+    </ion-slide>
+
+    <ion-slide>
+      
+      
+      <div class="align-col">
+        <h2 class="fboldness">Name of Institution you work for</h2> 
+       
+        <ion-list>
+          <ion-item>
+            <ion-input type="text" placeholder="Name of company you work for"></ion-input>
+          </ion-item>
+          <button type="submit" float-right ion-button color="primary" (click)="prev()">Previous</button>
+          <button type="submit" float-right ion-button color="primary" (click)="next()">Next</button>
+        
+        </ion-list>
+       </div>
+
+    </ion-slide>
+
+
+    <ion-slide>
+      
+      
+      <div class="align-col">
+        <h2 class="fboldness">What the purpose of the loan?</h2> 
+       
+        <ion-list>
+          <ion-item>
+            <ion-input type="text" placeholder="Purpose of the loan"></ion-input>
+          </ion-item>
+          
+          <button type="submit" float-right ion-button color="primary" (click)="next()">Submit Application</button>
+          <button type="submit" float-right ion-button color="primary" (click)="prev()">Back</button>
+        
+        </ion-list>
+       </div>
+
+    </ion-slide>
+</ion-slides>
+
+
+
+
+<div class="container" >
+  <ul class="progressbar">
+    <li >Received
+        <div class="border1"  >
+           
+            <b style="font-size: 100%;color: #000000;">Order Received</b>
+            <p style="font-size: 70%">Your order has been received</p>
+    
+        </div>
+    </li>
+
+    <li >Preparing
+        <div class="border2" >
+        
+            <b style="font-size: 100%;color: #000000;">Preparing Order</b>
+            <p style="font-size: 70%" text-wrap>Your order is being prepared for delivery</p>
+    
+        </div>
+    </li>
+    <li >On the way
+        <div class="border2" >
+          
+            <b style="font-size: 100%;color: #000000;">Yaayyy!</b>
+            <p style="font-size: 70%">Your order is on the way.</p>
+    
+        </div>
+    </li>
+    <li >Delivered
+        <div class="border2"  text-wrap>
+        
+            <b style="font-size: 100%;color: #000000;" text-wrap>Enjoy your meal</b>
+            <p style="font-size: 70%" text-wrap>Your order has been delivered</p>
+    
+        </div>
+    </li>
+   
+  </ul> 
+ 
+</div>
+
+ 
+
+</ion-content>

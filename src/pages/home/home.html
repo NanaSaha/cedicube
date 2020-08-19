@@ -1,17 +1,175 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+<ion-header class="background">
+  <ion-row>
+    <ion-col col-8>
+      <div class="align-col">
+        <h2 class="fboldness">Akwaaba, Kwaku</h2>
+        <p>Hope you having a good day!</p>
+      </div>
+    </ion-col>
+    <ion-col col-4>
+      <div class="align-img">
+        <!-- <ion-avatar item-start> -->
+        <img src="/assets/imgs/user.png" />
+        <!-- </ion-avatar> -->
+      </div>
+    </ion-col>
+  </ion-row>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <ion-card>
+    <ion-row>
+      <ion-col col-3>
+        <div class="imgclass">
+          <ion-avatar>
+            <img src="/assets/imgs/money.png" />
+          </ion-avatar>
+        </div>
+      </ion-col>
+
+      <ion-col col-9>
+        <div class="cardtext">
+          <p>Your CediCube Loan is</p>
+          <p>
+            <sup>¢ </sup><span class="fboldness" id="currency">3000</span>.00
+          </p>
+
+          <button
+            ion-button
+            color="primary"
+            outline
+            icon-end
+            (tap)="apply_loan()"
+          >
+            Get Loan
+
+            <ion-icon name="trending-down"></ion-icon>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+    <ion-row>
+      <ion-col col-3>
+        <div class="imgclass">
+          <ion-avatar>
+            <img src="/assets/imgs/cash-pay.png" />
+          </ion-avatar>
+        </div>
+      </ion-col>
+
+      <ion-col col-9>
+        <div class="cardtext">
+          <p>Amount Due To Pay</p>
+          <p>
+            <sup>¢ </sup><span class="fboldness" id="currency">1000</span>.00
+          </p>
+
+          <button ion-button color="secondary" outline icon-end>
+            Pay Your Loan
+
+            <ion-icon name="trending-up"></ion-icon>
+          </button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <!-- <ion-row>
+    <ion-col col-9>
+      <div class="activi"><p class="fboldness">Recent Activities</p> 
+      </div>
+    
+      </ion-col>
+
+      <ion-col col-3>
+        <div class="activi"><p class="fboldness">View All</p> 
+        </div>
+    
+      </ion-col>
+  </ion-row> -->
+
+  <div class="activi">
+    <p class="fboldness">Recent Activities</p>
+  </div>
+
+  <ion-list>
+    <ion-card>
+      <ion-item>
+        <ion-row>
+          <ion-col col-2>
+            <ion-avatar item-start>
+              <img src="/assets/imgs/mtn.png" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-6>
+            <h2 class="fboldness" text-wrap>Loan Disbursed</h2>
+            <p text-wrap>A loan has been disbursed to your account</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="amount_color" text-wrap>+400.00</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-row>
+          <ion-col col-2>
+            <ion-avatar item-start>
+              <img src="/assets/imgs/user.png" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-6 text-wrap>
+            <h2 class="fboldness">Loan Paid</h2>
+            <p>An amount was transfered from your account</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="amount_color2" text-wrap>-100.00</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-row>
+          <ion-col col-2>
+            <ion-avatar item-start>
+              <img src="/assets/imgs/mtn.png" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-6>
+            <h2 class="fboldness" text-wrap>Loan Disbursed</h2>
+            <p text-wrap>A loan has been disbursed to your account</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="amount_color" text-wrap>+400000.00</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item>
+        <ion-row>
+          <ion-col col-2>
+            <ion-avatar item-start>
+              <img src="/assets/imgs/user.png" />
+            </ion-avatar>
+          </ion-col>
+          <ion-col col-6 text-wrap>
+            <h2 class="fboldness">Loan Paid</h2>
+            <p>An amount was transfered from your account</p>
+          </ion-col>
+          <ion-col col-4>
+            <p class="amount_color2" text-wrap>-100.00</p>
+          </ion-col>
+        </ion-row>
+      </ion-item>
+    </ion-card>
+  </ion-list>
 </ion-content>
