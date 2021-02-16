@@ -17,6 +17,11 @@ $RECYCLE.BIN/
 log.txt
 npm-debug.log*
 
+Cedicube.apk
+app-release-unsigned.apk
+cedicube-key.jks
+
+
 /.idea
 /.ionic
 /.sass-cache
